@@ -1,0 +1,32 @@
+//architecture of Nodejs
+
+Blocking = synchronous = stops everything until done.
+Non-blocking = asynchronous = allows Node to continue executing while waiting.
+
+In traditional servers (like Apache), each client request can create a new thread, which may lead to high memory usage under heavy load. 
+Node.js uses a single-threaded event loop with non-blocking I/O, allowing it to handle many connections efficiently without creating a new 
+thread for each request.
+Blocking operations (like file system or CPU-intensive tasks) can tie up the Node.js thread pool, causing delays for other asynchronous 
+tasks. Avoid blocking the thread pool to maintain high concurrency.
+Best practice: Use non-blocking asynchronous code in Node.js to maximize performance and scalability.
+
+/*
+Example: Blocking (synchronous) file write
+*/
+const fs = require('fs');
+fs.writeFileSync('blocking.txt', 'This is a blocking write.');
+console.log('Blocking write complete.');
+
+/*
+Example: Non-blocking (asynchronous) file write
+*/
+fs.writeFile('nonblocking.txt', 'This is a non-blocking write.', (err) => {
+    if (err) throw err;
+    console.log('Non-blocking write complete.');
+});
+
+
+
+
+
+//Build a Http server
