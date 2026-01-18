@@ -1,0 +1,104 @@
+//HTTP Methods
+// HTTP methods are used to indicate the desired action to be performed on a resource in a web server.
+// The most common HTTP methods are:
+
+// 1. GET: Requests data from a specified resource. It should only retrieve data and have no other effect.
+// 2. POST: Submits data to be processed to a specified resource, often causing a change in state or side effects on the server.
+// 3. PUT: Replaces all current representations of the target resource with the uploaded content.
+// 4. PATCH: Partially modifies a resource. Only the specified changes are applied.
+// 5. DELETE: Removes the specified resource from the server.
+// 6. HEAD: Same as GET, but it transfers the status line and header section only, without the response body.
+// 7. OPTIONS: Describes the communication options for the target resource.
+// 8. TRACE: Performs a message loop-back test along the path to the target resource.
+// 9. CONNECT: Establishes a tunnel to the server identified by the target resource.
+
+// Each method serves a specific purpose and is used according to the requirements of the application.
+
+
+
+
+
+
+/*
+Express Framework:  % npm i express
+
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for building web and mobile applications.
+
+Why Express came into existence:
+- Node.js provides basic HTTP server capabilities, but building complex web applications with just Node.js can be repetitive and time-consuming.
+- Express was created to simplify the process of handling routes, requests, responses, middleware, and more.
+
+Why we use Express:
+- Simplifies routing and handling HTTP methods.
+- Makes middleware integration easy for tasks like authentication, logging, and error handling.
+- Provides utilities for serving static files, parsing request bodies, and managing cookies.
+- Enables rapid development of RESTful APIs and web applications.
+
+Problems without Express:
+- You would need to manually handle routing, request parsing, and response formatting.
+- Middleware management would be complex and less organized.
+- Code would be more verbose and harder to maintain.
+- Common tasks like error handling, serving static files, and parsing form data would require extra code.
+
+In summary, Express streamlines web development in Node.js, making code cleaner, more maintainable, and easier to scale.
+*/
+
+
+
+
+
+/*
+Package Versioning in Node.js (npm):
+
+When you install packages using npm, you often see version numbers like "express": "^4.18.2" in package.json. These numbers and symbols control which versions of a package your project will use.
+
+Semantic Versioning (semver):
+- Format: MAJOR.MINOR.PATCH (e.g., 2.5.1)
+    - MAJOR: Breaking changes
+    - MINOR: New features, backward-compatible
+    - PATCH: Bug fixes, backward-compatible
+
+Symbols in package.json:
+- ^ (Caret): Allows updates that do not change the leftmost non-zero digit. For example, "^1.2.3" matches "1.x.x" but not "2.0.0".
+- ~ (Tilde): Allows updates to the most recent PATCH version. For example, "~1.2.3" matches "1.2.x" but not "1.3.0".
+- No symbol: Installs the exact version specified.
+- * (Asterisk): Matches any version.
+
+Examples:
+- "^2.3.4" → Accepts "2.3.4", "2.4.0", "2.9.9", but not "3.0.0"
+- "~2.3.4" → Accepts "2.3.4", "2.3.5", but not "2.4.0"
+- "2.3.4" → Only installs "2.3.4"
+
+Why versioning matters:
+- Ensures compatibility and stability.
+- Allows you to control when to accept new features or breaking changes.
+- Helps avoid unexpected bugs from automatic updates.
+
+In summary, use "^" for safe feature updates, "~" for only bug fixes, and exact versions for maximum stability.
+*/ 
+
+
+
+
+
+/*
+RESTful API:
+
+A RESTful API (Representational State Transfer) is an architectural style for designing networked applications. It uses HTTP methods to perform operations on resources, which are identified by URLs.
+
+Key principles:
+- Stateless: Each request from a client contains all the information needed to process it.
+- Resources: Everything is a resource, accessible via a unique URL.
+- HTTP Methods: Uses standard HTTP methods (GET, POST, PUT, PATCH, DELETE) to perform CRUD operations.
+- Representation: Resources can be represented in different formats, commonly JSON or XML.
+
+Example RESTful routes for a "users" resource:
+- GET /users         → Retrieve all users
+- GET /users/:id     → Retrieve a specific user
+- POST /users        → Create a new user
+- PUT /users/:id     → Replace a user
+- PATCH /users/:id   → Update part of a user
+- DELETE /users/:id  → Delete a user
+
+RESTful APIs are widely used for building scalable and maintainable web services.
+*/
