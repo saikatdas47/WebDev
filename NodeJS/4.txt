@@ -41,6 +41,8 @@ Problems without Express:
 - Common tasks like error handling, serving static files, and parsing form data would require extra code.
 
 In summary, Express streamlines web development in Node.js, making code cleaner, more maintainable, and easier to scale.
+
+https://youtu.be/N2-FyBBxOZA?si=dNIo0WUdQQBd_ewP
 */
 
 
@@ -101,4 +103,17 @@ Example RESTful routes for a "users" resource:
 - DELETE /users/:id  → Delete a user
 
 RESTful APIs are widely used for building scalable and maintainable web services.
-*/
+
+ * Sends data from the server to the client in < HTML document > format.
+ * This approach is used when the server needs to deliver a fully-rendered web page or a fragment of HTML
+ * that the client can directly display in the browser. Sending data as HTML is common in traditional web applications,
+ * server-side rendering frameworks, or 
+ 
+ when the client expects ready-to-render markup instead of raw data (like JSON or XML).
+ * This reduces the need for client-side rendering logic and allows for faster initial page loads and improved SEO,
+ * as the content is immediately available to the browser and search engines.  react, flutter etc
+ 
+ https://youtu.be/cJAyEOZQUQY?si=9m7QxdEx-Yjr0lWe
+
+ */
+restApiProject
