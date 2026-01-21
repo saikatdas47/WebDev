@@ -1,0 +1,3 @@
+atwkkon model route sob code akta index.js e liksi akhon 3 ta alada folder e jabee
+model view controller nam easier
+model view controller routes 
