@@ -12,3 +12,5 @@ Request: PATCH /api/users/696f75ce1603c428e05afa11 - 2026-01-20T19:01:38.745Z
 Request: PATCH /api/users/696f75ce1603c428e05afa11 - 2026-01-20T19:02:54.233Z
 Request: PATCH /api/users/696f75ce1603c428e05afa11 - 2026-01-20T19:03:01.564Z
 Request: GET /api/users - 2026-01-20T19:09:30.482Z
+Request: GET /api/users/696f75ce1603c428e05afa11 - 2026-01-21T05:22:00.456Z
+Request: GET /api/users/ - 2026-01-21T05:22:06.606Z
